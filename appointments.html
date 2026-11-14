@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inquiries &amp; Appointments | Oladele Stitches</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">Oladele <span>Stitches</span></a>
+      <button id="menuToggle" class="menu-toggle" type="button">Menu</button>
+      <ul id="navLinks" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="board.html">Board of Trustees</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="appointments.html" class="active">Appointments</a></li>
+        <!-- <li><a href="dom-structure.html">DOM Structure</a></li> -->
+      </ul>
+    </div>
+  </header>
+  <div class="marquee-bar">
+    <div class="container">
+      <marquee behavior="scroll" direction="left" scrollamount="5">
+        UPCOMING EVENT: Oladele Stitches Indigo &amp; Gold Runway Showcase — December 12, 2026 at Landmark Centre, Lagos
+        | Private Bridal &amp; Bespoke Fittings Now Open — Book Your Appointment Today!
+      </marquee>
+    </div>
+  </div>
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <span class="eyebrow">Atelier Visits &amp; Questions</span>
+        <h1>Inquiries &amp; Appointments</h1>
+        <p>Schedule a private fitting, request a custom bridal consultation, or send us a general inquiry.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <div class="form-box">
+          <h2 style="margin-bottom: 16px;">Book an Appointment or Send an Inquiry</h2>
+          <form id="appointmentForm">
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" placeholder="e.g. Amaka Nwosu">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="e.g. amaka@example.com">
+            </div>
+
+            <div class="form-group">
+              <label for="serviceType">Service / Inquiry Type</label>
+              <select id="serviceType">
+                <option value="">-- Select an option --</option>
+                <option value="Bespoke Agbada / Suit Fitting">Bespoke Agbada / Suit Fitting</option>
+                <option value="Bridal & Aso-Ebi Consultation">Bridal &amp; Aso-Ebi Consultation</option>
+                <option value="Ready-to-Wear Alteration">Ready-to-Wear Alteration</option>
+                <option value="General Inquiry">General Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="preferredDate">Preferred Date</label>
+              <input type="date" id="preferredDate">
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Measurement Notes or Message</label>
+              <textarea id="notes" rows="4"
+                placeholder="Tell us about your event date, preferred fabric, or questions..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Confirm Request</button>
+            <div id="formMessage" class="form-message"></div>
+          </form>
+        </div>
+
+        <div class="form-box">
+          <span class="eyebrow">Showroom Details</span>
+          <h2 style="margin-bottom: 16px;">Visit the Oladele Stitches Atelier</h2>
+          <p style="color: var(--muted); margin-bottom: 18px;">
+            Our tailors welcome walk-in inquiries during business hours, while bespoke fittings are best booked ahead.
+          </p>
+          <p style="margin-bottom: 10px;"><strong>Address:</strong> 14 Admiralty Way, Lekki Phase 1, Lagos</p>
+          <p style="margin-bottom: 10px;"><strong>Phone:</strong> +234 800 555 0194</p>
+          <p style="margin-bottom: 10px;"><strong>Email:</strong> atelier@oladelestitches.com</p>
+          <p style="margin-bottom: 10px;"><strong>Hours:</strong> Tuesday – Saturday, 10:00 AM – 6:00 PM</p>
+
+          <hr class="stitch-divider">
+
+          <h3 style="margin-bottom: 8px;">What to Expect at Your Fitting</h3>
+          <p style="color: var(--muted); font-size: 0.94rem;">
+            A 45-minute session with our head tailor covering fabric selection, body measurements, and delivery
+            timeline.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Oladele Stitches</div>
+          <p style="font-size: 0.9rem; color: #e2e0db;">Contemporary Bespoke &amp; Ready-to-Wear Fashion House</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="board.html">Board of Trustees</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+          <li><a href="dom-structure.html">DOM Structure</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="currentYear">2026</span> Oladele Stitches. All rights reserved.</span>
+        <span>CSC 106 / IFT 203 — Web Technologies Project</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

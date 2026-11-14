@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Structure | Oladele Stitches</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">Oladele <span>Stitches</span></a>
+      <button id="menuToggle" class="menu-toggle" type="button">Menu</button>
+      <ul id="navLinks" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="board.html">Board of Trustees</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="dom-structure.html" class="active">DOM Structure</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="marquee-bar">
+    <div class="container">
+      <marquee behavior="scroll" direction="left" scrollamount="5">
+        UPCOMING EVENT: Oladele Stitches Indigo &amp; Gold Runway Showcase — December 12, 2026 at Landmark Centre, Lagos
+        | Private Bridal &amp; Bespoke Fittings Now Open — Book Your Appointment Today!
+      </marquee>
+    </div>
+  </div>
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <span class="eyebrow">Website Architecture</span>
+        <h1>Document Object Model (DOM) Structure</h1>
+        <p>Visualizing how every HTML page in Oladele Stitches is organized as a tree of nodes in the browser DOM.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="dom-box">
+          <div class="section-header" style="margin-bottom: 16px;">
+            <h2>HTML Document Tree</h2>
+            <button id="inspectDomBtn" type="button" class="btn btn-gold">Run Live DOM Count</button>
+          </div>
+          <p id="domStats"
+            style="font-family: 'JetBrains Mono', monospace; color: var(--accent); margin-bottom: 20px; font-size: 0.9rem;">
+            Click "Run Live DOM Count" to inspect the active nodes on this page with JavaScript.
+          </p>
+
+          <ul class="dom-tree">
+            <li>
+              <span class="dom-node">document</span> <span class="dom-desc">Root Document Object</span>
+              <ul>
+                <li>
+                  <span class="dom-node">&lt;html&gt;</span> <span class="dom-desc">Root HTML element</span>
+                  <ul>
+                    <li>
+                      <span class="dom-node">&lt;head&gt;</span> <span class="dom-desc">Metadata &amp; External
+                        CSS</span>
+                      <ul>
+                        <li><span class="dom-node">&lt;meta&gt;</span> <span class="dom-desc">Charset &amp; responsive
+                            viewport</span></li>
+                        <li><span class="dom-node">&lt;title&gt;</span> <span class="dom-desc">Page title</span></li>
+                        <li><span class="dom-node">&lt;link rel="stylesheet" href="css/styles.css"&gt;</span> <span
+                            class="dom-desc">External CSS file</span></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span class="dom-node">&lt;body&gt;</span> <span class="dom-desc">Visible page content</span>
+                      <ul>
+                        <li>
+                          <span class="dom-node">&lt;header class="site-header"&gt;</span>
+                          <ul>
+                            <li><span class="dom-node">&lt;nav / ul class="nav-links"&gt;</span> <span
+                                class="dom-desc">Consistent 6-page link structure</span></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <span class="dom-node">&lt;div class="marquee-bar"&gt;</span>
+                          <ul>
+                            <li><span class="dom-node">&lt;marquee&gt;</span> <span class="dom-desc">Scrolling event
+                                announcement on all pages</span></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <span class="dom-node">&lt;main&gt;</span> <span class="dom-desc">Page-specific
+                            sections</span>
+                          <ul>
+                            <li><span class="dom-node">&lt;section class="hero / page-banner"&gt;</span> <span
+                                class="dom-desc">Introductory banner</span></li>
+                            <li><span class="dom-node">&lt;section class="section"&gt;</span> <span
+                                class="dom-desc">Products / Trustees / Events / Form / DOM Tree</span></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <span class="dom-node">&lt;footer class="site-footer"&gt;</span>
+                          <ul>
+                            <li><span class="dom-node">&lt;ul class="footer-links"&gt;</span> <span
+                                class="dom-desc">Consistent footer navigation links</span></li>
+                          </ul>
+                        </li>
+                        <li><span class="dom-node">&lt;script src="js/main.js"&gt;</span> <span
+                            class="dom-desc">Interactive JavaScript features</span></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Oladele Stitches</div>
+          <p style="font-size: 0.9rem; color: #e2e0db;">Contemporary Bespoke &amp; Ready-to-Wear Fashion House</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="board.html">Board of Trustees</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+          <li><a href="dom-structure.html">DOM Structure</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="currentYear">2026</span> Oladele Stitches. All rights reserved.</span>
+        <span>CSC 106 / IFT 203 — Web Technologies Project</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

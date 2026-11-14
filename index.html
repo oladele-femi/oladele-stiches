@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oladele Stitches | Contemporary Fashion House</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">Oladele <span>Stitches</span></a>
+      <button id="menuToggle" class="menu-toggle" type="button">Menu</button>
+      <ul id="navLinks" class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="board.html">Board of Trustees</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <!-- <li><a href="dom-structure.html">DOM Structure</a></li> -->
+      </ul>
+    </div>
+  </header>
+  <div class="marquee-bar">
+    <div class="container">
+      <marquee behavior="scroll" direction="left" scrollamount="5">
+        UPCOMING EVENT: Oladele Stitches Indigo &amp; Gold Runway Showcase — December 12, 2026 at Landmark Centre, Lagos
+        | Private Bridal &amp; Bespoke Fittings Now Open — Book Your Appointment Today!
+      </marquee>
+    </div>
+  </div>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Bespoke &amp; Ready-to-Wear Atelier</span>
+          <h1>Tailored Heritage for the Modern Wardrobe.</h1>
+          <p>
+            Welcome to <strong>Oladele Stitches</strong>. We are an upcoming fashion house crafting
+            custom Agbada, structured silk gowns, and modern senator wear where traditional Nigerian
+            textiles meet crisp contemporary tailoring.
+          </p>
+          <div class="btn-group">
+            <a href="products.html" class="btn btn-primary">Explore Collection</a>
+            <a href="appointments.html" class="btn btn-outline">Book a Fitting</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="img/hero-atelier.jpg" alt="Oladele Stitches Atelier Showcase">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Featured Craftsmanship</span>
+            <h2>Signature Collections</h2>
+          </div>
+          <a href="products.html" class="btn btn-outline">View All Products</a>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <img src="img/product-agbada.jpg" alt="Royal Indigo Agbada" class="card-img">
+            <div class="card-body">
+              <span class="card-tag">Bespoke</span>
+              <h3 class="card-title">Royal Indigo Agbada</h3>
+              <p class="card-text">Three-piece hand-embroidered indigo agbada tailored for ceremonial occasions.</p>
+              <a href="products.html" class="btn btn-primary">See Details</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="img/product-gown.jpg" alt="Garnet Adire Silk Gown" class="card-img">
+            <div class="card-body">
+              <span class="card-tag">Ready-to-Wear</span>
+              <h3 class="card-title">Garnet Adire Gown</h3>
+              <p class="card-text">Structured evening gown combining hand-dyed adire motifs with silk crepe.</p>
+              <a href="products.html" class="btn btn-primary">See Details</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="img/product-bridal.jpg" alt="Woven Gold Bridal Couture" class="card-img">
+            <div class="card-body">
+              <span class="card-tag">Bridal &amp; Aso-Ebi</span>
+              <h3 class="card-title">Woven Gold Bridal</h3>
+              <p class="card-text">Custom bridal &amp; aso-ebi couture finished with delicate gold lacework.</p>
+              <a href="products.html" class="btn btn-primary">See Details</a>
+            </div>
+          </article>
+        </div>
+
+        <hr class="stitch-divider">
+        <div class="form-box">
+          <span class="eyebrow">Atelier Note</span>
+          <p id="atelierQuote" style="font-size: 1.15rem; color: var(--primary); margin-bottom: 16px;">
+            “Every stitch at Oladele Stitches is measured by hand for an effortless, confident drape.”
+          </p>
+          <button id="nextQuoteBtn" type="button" class="btn btn-gold">Next Atelier Note</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Oladele Stitches</div>
+          <p style="font-size: 0.9rem; color: #e2e0db;">Contemporary Bespoke &amp; Ready-to-Wear Fashion House</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="board.html">Board of Trustees</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+          <li><a href="dom-structure.html">DOM Structure</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="currentYear">2026</span> Oladele Stitches. All rights reserved.</span>
+        <span>CSC 106 / IFT 203 — Web Technologies Project</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

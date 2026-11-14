@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | Oladele Stitches</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">Oladele <span>Stitches</span></a>
+      <button id="menuToggle" class="menu-toggle" type="button">Menu</button>
+      <ul id="navLinks" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="board.html">Board of Trustees</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <!-- <li><a href="dom-structure.html">DOM Structure</a></li> -->
+      </ul>
+    </div>
+  </header>
+  <div class="marquee-bar">
+    <div class="container">
+      <marquee behavior="scroll" direction="left" scrollamount="5">
+        UPCOMING EVENT: Oladele Stitches Indigo &amp; Gold Runway Showcase — December 12, 2026 at Landmark Centre, Lagos
+        | Private Bridal &amp; Bespoke Fittings Now Open — Book Your Appointment Today!
+      </marquee>
+    </div>
+  </div>
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <span class="eyebrow">Product Showcase</span>
+        <h1>Our Fashion Collections</h1>
+        <p>Filter by category to explore our bespoke menswear, ready-to-wear silhouettes, and bridal couture.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar">
+          <button class="filter-btn active" data-category="all" type="button">All Pieces</button>
+          <button class="filter-btn" data-category="bespoke" type="button">Bespoke</button>
+          <button class="filter-btn" data-category="rtw" type="button">Ready-to-Wear</button>
+          <button class="filter-btn" data-category="bridal" type="button">Bridal &amp; Aso-Ebi</button>
+        </div>
+
+        <div class="grid-3">
+          <article class="card product-card" data-category="bespoke">
+            <img src="img/product-agbada.jpg" alt="Royal Indigo Agbada" class="card-img">
+            <div class="card-body">
+              <span class="card-tag">Bespoke</span>
+              <h3 class="card-title">Royal Indigo Agbada</h3>
+              <p class="card-text">Three-piece deep indigo cotton-silk agbada with gold thread embroidery.</p>
+              <div class="card-price">₦185,000</div>
+              <button type="button" class="btn btn-primary view-detail-btn" data-title="Royal Indigo Agbada"
+                data-cat="Bespoke Menswear" data-price="₦185,000"
+                data-desc="Includes inner kaftan, trousers, and hand-embroidered outer agbada robe. Tailored to your exact measurements in 14 days.">
+                Quick View
+              </button>
+            </div>
+          </article>
+
+          <article class="card product-card" data-category="rtw">
+            <img src="img/product-gown.jpg" alt="Garnet Adire Gown" class="card-img">
+            <div class="card-body">
+              <span class="card-tag">Ready-to-Wear</span>
+              <h3 class="card-title">Garnet Adire Gown</h3>
+              <p class="card-text">Structured floor-length gown in garnet silk with subtle gold pleating.</p>
+              <div class="card-price">₦120,000</div>
+              <button type="button" class="btn btn-primary view-detail-btn" data-title="Garnet Adire Gown"
+                data-cat="Ready-to-Wear" data-price="₦120,000"
+                data-desc="Available in sizes XS–XXL. Features breathable silk lining and handcrafted adire paneling.">
+                Quick View
+              </button>
+            </div>
+          </article>
+
+          <article class="card product-card" data-category="bespoke">
+            <img src="img/product-suit.jpg" alt="Charcoal Senator Kaftan" class="card-img">
+            <div class="card-body">
+              <span class="card-tag">Bespoke</span>
+              <h3 class="card-title">Charcoal Senator Suit</h3>
+              <p class="card-text">Sharp minimalist senator kaftan with concealed placket and tailored trousers.</p>
+              <div class="card-price">₦95,000</div>
+              <button type="button" class="btn btn-primary view-detail-btn" data-title="Charcoal Senator Suit"
+                data-cat="Bespoke Menswear" data-price="₦95,000"
+                data-desc="Crafted from breathable Italian cashmere-blend fabric. Ideal for corporate events and evening receptions.">
+                Quick View
+              </button>
+            </div>
+          </article>
+
+          <article class="card product-card" data-category="bridal">
+            <img src="img/product-bridal.jpg" alt="Woven Gold Bridal Couture" class="card-img">
+            <div class="card-body">
+              <span class="card-tag">Bridal &amp; Aso-Ebi</span>
+              <h3 class="card-title">Woven Gold Bridal</h3>
+              <p class="card-text">Custom bridal &amp; aso-ebi silhouette with woven gold lace and structured bodice.
+              </p>
+              <div class="card-price">₦320,000</div>
+              <button type="button" class="btn btn-primary view-detail-btn" data-title="Woven Gold Bridal"
+                data-cat="Bridal &amp; Aso-Ebi" data-price="₦320,000"
+                data-desc="Includes two private atelier fittings, custom corset structuring, and matching headwrap styling.">
+                Quick View
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="productModal" class="modal-backdrop">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span id="modalCategory" class="card-tag">Category</span>
+        <button id="modalClose" class="modal-close" type="button">&times;</button>
+      </div>
+      <h2 id="modalTitle" style="margin-bottom: 8px;">Product Title</h2>
+      <div id="modalPrice" class="card-price">₦0</div>
+      <p id="modalDesc" style="color: var(--muted); margin-bottom: 20px;">Description</p>
+      <a href="appointments.html" class="btn btn-gold">Book a Fitting for This Piece</a>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Oladele Stitches</div>
+          <p style="font-size: 0.9rem; color: #e2e0db;">Contemporary Bespoke &amp; Ready-to-Wear Fashion House</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="board.html">Board of Trustees</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+          <li><a href="dom-structure.html">DOM Structure</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="currentYear">2026</span> Oladele Stitches. All rights reserved.</span>
+        <span>CSC 106 / IFT 203 — Web Technologies Project</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
