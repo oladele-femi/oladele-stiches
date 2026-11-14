@@ -4,6 +4,9 @@ A simple multi-page fashion house website built for **CSC 106 / IFT 203 — Intr
 
 **Oladele Stitches** is a contemporary Nigerian bespoke and ready-to-wear fashion house offering custom Agbada, senator suits, adire evening gowns, and bridal/aso-ebi couture.
 
+- **Live Website:** https://oladele-femi.github.io/oladele-stiches/
+- **GitHub Repository:** https://github.com/oladele-femi/oladele-stiches
+
 ---
 
 ## Pages Included
